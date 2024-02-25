@@ -5,7 +5,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const CreateTask = () => {
-
+    
     const {user}= useContext(AuthContext)
     const navigate =useNavigate();
     const {  register,
@@ -14,10 +14,11 @@ const CreateTask = () => {
     } = useForm();
     const onSubmit = (data) => {
         console.log(data);
-        fetch('https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/task', {
+        fetch('https://task-server-five-alpha.vercel.app/task', {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+              'Access-Control-Allow-Origin': '*'
             },
             body:JSON.stringify(data)
         })

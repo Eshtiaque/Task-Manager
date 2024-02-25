@@ -8,7 +8,10 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 
 //middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://task-management-7e6e2.web.app",
+  credentials: true
+}));
 app.use(express.json());
 
 

@@ -56,7 +56,7 @@ export const router = createBrowserRouter([
       {
         path: 'editTask/:id',
         element: <EdiPost></EdiPost>,
-        loader: ({ params }) => fetch(`https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/editTask/${params.id}`)
+        loader: ({ params }) => fetch(`https://task-server-five-alpha.vercel.app/editTask/${params.id}`)
 
       },
 

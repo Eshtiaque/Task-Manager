@@ -43,7 +43,7 @@ const SocialShare = () => {
         alert('URL copied to clipboard: ' + url);
     };
 
-    const URL = "https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app";
+    const URL = "https://task-server-five-alpha.vercel.app";
     return (
         <div >
             <div>

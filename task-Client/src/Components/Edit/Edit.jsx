@@ -23,7 +23,7 @@ const EdiPost = () => {
         form.reset();
         console.log(data.name);
         const update = { date, email, description, title, name };
-        fetch(`https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/task/${data?._id}`, {
+        fetch(`https://task-server-five-alpha.vercel.app/task/${data?._id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
@@ -70,8 +70,8 @@ const EdiPost = () => {
 
         }).then((result) => {
             if (result.isConfirmed) {
-                // https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/task/65d9adc14166c0785fb28252
-                fetch(`https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/task/${id}`, {
+                // https://task-server-five-alpha.vercel.app/task/65d9adc14166c0785fb28252
+                fetch(`https://task-server-five-alpha.vercel.app/task/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

@@ -11,7 +11,7 @@ const MyTask = () => {
     const [searchText, setSearchText] = useState("");
 
     useEffect(() => {
-        fetch(`https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/task/${user?.email}`)
+        fetch(`https://task-server-five-alpha.vercel.app/task/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -20,7 +20,7 @@ const MyTask = () => {
     }, [user])
 
     const handleSearch = () => {
-        fetch(`https://task-server-aqropyc2x-estahmed111-gmailcom.vercel.app/searchText/${searchText}`)
+        fetch(`https://task-server-five-alpha.vercel.app/searchText/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
