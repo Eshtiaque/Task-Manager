@@ -1,19 +1,19 @@
-$Live Link: https://task-management-7e6e2.web.app/
+#Live Link: https://task-management-7e6e2.web.app/
 
 
-$Feature:
- User-friendly
-Task Added
-Task Update
-Task Delete
-My Task
-Authentication System
-Attractive UI
-Dashboard
-Search bar
+#Feature:
+1. User-friendly
+2. Task Added
+3. Task Update
+4. Task Delete
+5. My Task
+6. Authentication System
+7. Attractive UI
+8. Dashboard
+9. Search bar
 
 
-$Technology:
+#Technology:
 1. React.Js
 2. Nodejs
 3. ExpressJs
